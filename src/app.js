@@ -6,5 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   TextInput.bindEvent();
   WordCounter.bindEvent();
+  CountOutput.bindEvent();
 
 });
