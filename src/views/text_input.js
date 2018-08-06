@@ -5,8 +5,9 @@ class TextInput {
 
   static bindEvent(){
     const input = document.getElementById('wordcounter-form');
-    input.addEventListener('input', (evt) => {
-      const text = evt.target.value;
+    input.addEventListener('submit', (evt) => {
+      evt.preventDefault();
+      const text = evt.target.text.value;
       PubSub.publish(`TextInput:text`, text);
     });
   };
