@@ -1,3 +1,10 @@
+const TextInput = require("./views/text_input.js");
+const WordCounter = require("./models/word_counter.js");
+const CountOutput = require("./views/count_output.js")
+
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('JavaScript Loaded');
+
+  TextInput.bindEvent();
+  WordCounter.bindEvent();
+
 });
