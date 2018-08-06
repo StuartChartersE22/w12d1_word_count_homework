@@ -1,10 +1,15 @@
 const PubSub = require(`../helpers/pub_sub.js`)
+const WordVerifier = require(`../helpers/word_verifier.js`)
 
 class WordCounter {
   constructor() {}
 
   static numberOfWords(text){
-    const wordArray = text.split(" ");
+    const textArray = text.split(" ");
+    const wordArray = textArray.filter((entry) => {
+      entry.toLowerCase();
+      return WordVerifier.isWord(entry);
+    });
     return wordArray.length;
   };
 
