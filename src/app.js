@@ -4,8 +4,8 @@ const CountOutput = require("./views/count_output.js");
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  TextInput.bindEvent();
-  WordCounter.bindEvent();
-  CountOutput.bindEvent();
+  TextInput.bindEvents();
+  WordCounter.bindEvents();
+  CountOutput.bindEvents();
 
 });

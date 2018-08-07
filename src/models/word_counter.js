@@ -12,7 +12,7 @@ class WordCounter {
     return wordArray.length;
   };
 
-  static bindEvent(){
+  static bindEvents(){
     PubSub.subscribe(`TextInput:text`, (evt) => {
       const text = evt.detail;
       const result = this.numberOfWords(text);

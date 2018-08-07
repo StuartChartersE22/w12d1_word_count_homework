@@ -3,7 +3,7 @@ const PubSub = require(`../helpers/pub_sub.js`);
 class TextInput {
   constructor() {}
 
-  static bindEvent(){
+  static bindEvents(){
     const input = document.getElementById('wordcounter-form');
     input.addEventListener('submit', (evt) => {
       evt.preventDefault();
