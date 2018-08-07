@@ -7,7 +7,6 @@ class WordCounter {
   static numberOfWords(text){
     const textArray = text.split(" ");
     const wordArray = textArray.filter((entry) => {
-      entry.toLowerCase();
       return WordVerifier.isWord(entry);
     });
     return wordArray.length;
